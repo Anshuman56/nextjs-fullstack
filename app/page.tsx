@@ -1,4 +1,4 @@
-import { createMessage, deleteMessage } from "./actions";
+import { createMessage } from "./actions";
 import Message from "./lib/models/Message";
 import { dbConnect } from "./lib/mongodb";
 
