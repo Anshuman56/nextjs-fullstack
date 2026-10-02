@@ -12,7 +12,7 @@ export async function createMessage(formData: FormData) {
   revalidatePath("/");
 }
 
-export async function deleteMessage(id: number) {
+export async function deleteMessage(id: string) {
   await dbConnect();
   await Message.findByIdAndDelete(id);
   revalidatePath("/");
